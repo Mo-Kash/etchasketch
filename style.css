@@ -1,29 +1,73 @@
+.all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(45deg, rgb(224, 203, 207), rgb(1, 155, 245));
+}
+
+.header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+}
+
 #container{
     display:flex;
     flex-wrap: wrap;
     position: relative;
 	top: 30px;
-	outline:5px solid #000;
 	font-size: 0;
 	margin:auto;
 	height:960px;
 	width:960px;
 	padding: 0;
-	border: none;
-    margin-bottom: 100px;
+    border-radius: 4px;
+    margin-bottom: 50px;
+    border: 5px solid black;
+    box-shadow: rgba(5, 5, 5, 0.24) 0px 24px 64px;
 }
 
 .grid-item{
     margin:0;
     padding:0;
     box-sizing: border-box;
-    border: none;
-    outline: 1px solid black;
-    display:inline-block;
+    /* border: 1px solid #909ca7; */  /* haven't decided on whether to keep grid lines or not */
 }
 
-.button1{
+.optionbar{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}
+
+input[type=button]{
+    background-color:rgba(0, 0, 0, 0.24);
+    width:100%;
+    height:100%;
+    border-radius:5px;
+    color: black;
+    border: 1px solid black;
+    padding:18px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.footer{
     display:flex;
     justify-content: center;
-    align-items: center;
+    font-size:36px;
+    text-align:center;
+    position:relative;
+    margin-top:auto;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.24);
+    color:black;
 }
